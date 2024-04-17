@@ -317,7 +317,7 @@ gsap.to(image1, {
     start: "top 60%",
     end: "80% 70%",
     // markers : true,
-    scrub: 1,
+    scrub: 3,
     // pin : true,
   },
 });
@@ -332,7 +332,7 @@ gsap.to(image2, {
     start: "top 60%",
     end: "90% 70%",
     // markers : true,
-    scrub: 1,
+    scrub: 3,
     // pin : true,
   },
 });
@@ -347,7 +347,7 @@ gsap.to(image3, {
     start: "top 60%",
     end: "bottom 70%",
     // markers : true,
-    scrub: 1,
+    scrub: 3,
     // pin : true,
   },
 });
@@ -362,7 +362,7 @@ gsap.to(image4, {
     start: "top 60%",
     end: "65% 65%",
     // markers : true,
-    scrub: 1,
+    scrub: 3,
     // pin : true,
   },
 });
