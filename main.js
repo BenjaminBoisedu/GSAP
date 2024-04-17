@@ -376,3 +376,24 @@ gsap.to(image4, {
 //   scene.background = new THREE.Color(0xffffff);
 //   pointLight.color = new THREE.Color(0x000000);
 // });
+
+const inauguration = document.querySelector(".inauguration");
+
+gsap.fromTo(
+  inauguration,
+  {
+    y: 100,
+    opacity: 0,
+    ease: "power1.inOut",
+    delay: 2,
+    duration: 1.5,
+    direction: "alternate",
+  },
+  {
+    y: 0,
+    opacity: 1,
+    duration: 1.5,
+    delay: 2,
+    ease: "power1.inOut",
+  }
+);
