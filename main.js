@@ -164,6 +164,12 @@ window.addEventListener("scroll", () => {
   UpdateCam();
   btn.style.opacity = 1 - scroll.y / 500;
   anchor.style.opacity = 0 + scroll.y / 500;
+  if (scroll.y > 3850) {
+    anchor.style.color = "black";
+  } else {
+    anchor.style.color = "white";
+  }
+
   H1name.style.opacity = 1 - scroll.y / 500;
   credits.style.opacity = 1 - scroll.y / 500;
 });
