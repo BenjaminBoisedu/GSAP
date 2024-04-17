@@ -1,0 +1,65 @@
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+$colorText: #f0f0f0;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: $colorText;
+  background-color: #1a1a1a;
+  height: 200vh;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  height: 200vh;
+}
+
+.container .main-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.container .main-nav ul li a {
+  color: $colorText;
+  text-decoration: none;
+}
+
+.container-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+}
+
+.container-img .image {
+  width: 100%;
+  height: auto;
+}
+
+.container-img .image i {
+  width: 100%;
+  height: auto;
+}
+
+.container .main-nav ul li a:hover {
+  color: #f0f0f0;
+}
+
+.part{
+  height: 100vh;
+}
