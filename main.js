@@ -278,17 +278,66 @@ gsap.registerPlugin(ScrollTrigger)
 const containerImg = document.querySelector('.container-img');
 const expo = document.querySelector('.expo');
 const image1 = document.querySelector('.image1');
+const image2 = document.querySelector('.image2');
+const image3 = document.querySelector('.image3');
+const image4 = document.querySelector('.image4');
 
 gsap.to(image1, {
-  xPercent : 500,
+  xPercent : 100,
   // duration : 2,
   scrollTrigger : {
-      trigger : expo, 
-      toggleActions : "restart reverse play reverse",
-      start : "top 40%",
-      end : "bottom 30%",
+      trigger : image1, 
+      // toggleActions : "restart reverse play reverse",
+      toggleActions : "reverse none none none",
+      start : "top 50%",
+      end : "bottom 60%",
       markers : true,
       scrub : 1,
       // pin : true,
   }
 })
+
+gsap.to(image2, {
+  xPercent : -100,
+  // duration : 2,
+  scrollTrigger : {
+    trigger : image2, 
+    // toggleActions : "restart reverse play reverse",
+    toggleActions : "reverse none none none",
+    start : "top 50%",
+    end : "bottom 60%",
+    markers : true,
+    scrub : 1,
+    // pin : true,
+}
+})
+
+gsap.to(image3, {
+  xPercent : 100,
+  // duration : 2,
+  scrollTrigger : {
+    trigger : image3, 
+    // toggleActions : "restart reverse play reverse",
+    toggleActions : "reverse none none none",
+    start : "top 50%",
+    end : "bottom 60%",
+    markers : true,
+    scrub : 1,
+    // pin : true,
+}
+})
+
+// gsap.to(image4, {
+//   xPercent : -100,
+//   // duration : 2,
+//   scrollTrigger : {
+//       trigger : expo, 
+//       // toggleActions : "restart reverse play reverse",
+//       toggleActions : "reverse none none none",
+//       start : "top 10%",
+//       end : "bottom 90%",
+//       // markers : true,
+//       scrub : 1,
+//       // pin : true,
+//   }
+// })

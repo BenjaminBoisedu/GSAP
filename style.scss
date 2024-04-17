@@ -386,3 +386,31 @@ body {
 .part {
   height: 100vh;
 }
+
+.container-img{
+  overflow: hidden;
+}
+
+.image img{
+  width: 100%;
+}
+
+.image1{
+  position: relative;
+  left: -100%;
+}
+
+.image2{
+  position: relative;
+  left: 100%;
+}
+
+.image3{
+  position: relative;
+  left: 100px;
+}
+
+.image4{
+  position: relative;
+  left: 100px;
+}
