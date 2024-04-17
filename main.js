@@ -327,17 +327,17 @@ gsap.to(image3, {
 }
 })
 
-// gsap.to(image4, {
-//   xPercent : -100,
-//   // duration : 2,
-//   scrollTrigger : {
-//       trigger : expo, 
-//       // toggleActions : "restart reverse play reverse",
-//       toggleActions : "reverse none none none",
-//       start : "top 10%",
-//       end : "bottom 90%",
-//       // markers : true,
-//       scrub : 1,
-//       // pin : true,
-//   }
-// })
+gsap.to(image4, {
+  xPercent : -100,
+  // duration : 2,
+  scrollTrigger : {
+    trigger : image4, 
+    // toggleActions : "restart reverse play reverse",
+    toggleActions : "reverse none none none",
+    start : "top 50%",
+    end : "bottom 60%",
+    markers : true,
+    scrub : 1,
+    // pin : true,
+}
+})
