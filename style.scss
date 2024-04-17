@@ -176,7 +176,7 @@ body {
 
   .content p {
     font-size: 1rem;
-    text-align: center;
+    text-align: justify;
     font-family: $fontFamily;
   }
 
@@ -232,8 +232,7 @@ body {
 
   .content article p {
     font-size: 1rem;
-    text-align: center;
-    letter-spacing: 5px;
+    text-align: right;
     font-family: $fontFamily;
   }
 
@@ -308,6 +307,11 @@ body {
   main .contact button:active {
     color: #151515;
     background-color: $colorText;
+  }
+
+  .expo img {
+    width: 80%;
+    border: 1px solid $colorText;
   }
 
   footer {
@@ -387,33 +391,33 @@ body {
   height: 100vh;
 }
 
-.container-img{
+.container-img {
   overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.image img{
+.image img {
   width: 80%;
 }
 
-.image1{
+.image1 {
   position: relative;
   left: -60%;
 }
 
-.image2{
+.image2 {
   position: relative;
   left: 80%;
 }
 
-.image3{
+.image3 {
   position: relative;
   left: -60%;
 }
 
-.image4{
+.image4 {
   position: relative;
   left: 80%;
 }

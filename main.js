@@ -51,7 +51,11 @@ const path = new THREE.CatmullRomCurve3([
 
 const points = path.getPoints(50);
 const geometry = new THREE.BufferGeometry().setFromPoints(points);
-const material = new THREE.LineBasicMaterial({ color: 0x000000 });
+if (scene.background === new THREE.Color(0x000000)) {
+  var material = new THREE.LineBasicMaterial({ color: 0xffffff });
+} else {
+  var material = new THREE.LineBasicMaterial({ color: 0x000000 });
+}
 const curveObject = new THREE.Line(geometry, material);
 scene.add(curveObject);
 
@@ -79,7 +83,12 @@ const camPath = new THREE.CatmullRomCurve3([
 
 const camPoints = camPath.getPoints(50);
 const camGeometry = new THREE.BufferGeometry().setFromPoints(camPoints);
-const camMaterial = new THREE.LineBasicMaterial({ color: 0x000000 });
+if (scene.background === new THREE.Color(0x000000)) {
+  var camMaterial = new THREE.LineBasicMaterial({ color: 0x00000000 });
+} else {
+  var camMaterial = new THREE.LineBasicMaterial({ color: 0x000000 });
+}
+
 const camObject = new THREE.Line(camGeometry, camMaterial);
 scene.add(camObject);
 
@@ -347,3 +356,17 @@ gsap.to(image4, {
     // pin : true,
   },
 });
+
+// const darkmode = document.querySelector(".darkmode-on");
+
+// const lightmode = document.querySelector(".darkmode-off");
+
+// darkmode.addEventListener("click", () => {
+//   scene.background = new THREE.Color(0x000000);
+//   pointLight.color = new THREE.Color(0xffffff);
+// });
+
+// lightmode.addEventListener("click", () => {
+//   scene.background = new THREE.Color(0xffffff);
+//   pointLight.color = new THREE.Color(0x000000);
+// });
