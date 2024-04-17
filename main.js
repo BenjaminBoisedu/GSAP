@@ -92,6 +92,10 @@ if (scene.background === new THREE.Color(0x000000)) {
 const camObject = new THREE.Line(camGeometry, camMaterial);
 scene.add(camObject);
 
+const flash = new THREE.PointLight(0xffffff, 10, 100, 2);
+flash.position.set(0, 1, 1.5);
+scene.add(flash);
+
 const lightShadow = new THREE.DirectionalLight(0xe4e8ea, 10);
 lightShadow.position.set(3, -1, 1);
 lightShadow.castShadow = true;
@@ -312,7 +316,7 @@ gsap.to(image1, {
     toggleActions: "reverse none none none",
     start: "top 60%",
     end: "80% 70%",
-    // markers : true, 
+    // markers : true,
     scrub: 1,
     // pin : true,
   },
