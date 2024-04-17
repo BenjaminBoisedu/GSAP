@@ -6,6 +6,7 @@ canvas {
 }
 
 $colorText: #f0f0f0;
+$fontFamily: fantasy;
 
 * {
   margin: 0;
@@ -20,46 +21,368 @@ body {
   height: 200vh;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-  height: 200vh;
+@media screen and (max-width: 768px) {
+  main {
+    grid-template-columns: 1fr;
+  }
 }
 
-.container .main-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
+@media screen and (max-width: 436px) {
+  .container .anchor-link {
+    color: $colorText;
+    font-size: 1.5rem;
+    font-family: $fontFamily;
+    text-decoration: none;
+    margin: 0 5px;
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    z-index: 2;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5px;
+  }
+
+  header .main-nav {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: none;
+  }
+
+  header .menu-btn {
+    font-size: xx-large;
+    color: $colorText;
+    position: fixed;
+    top: 5px;
+    right: 1px;
+    z-index: 2;
+  }
+
+  header .menu-btn i {
+    color: $colorText;
+  }
+
+  header .menu-btn i:hover {
+    color: #f0f0f0;
+  }
+
+  header .main-nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1a1a1a;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transform: translateX(-100%);
+    transition: transform 0.5s cubic-bezier(0.62, 0.58, 0.83, 1.43);
+    text-decoration: none;
+    border: 1px solid $colorText;
+  }
+
+  header .main-nav ul.active {
+    transform: translateX(0);
+    transition: transform 0.5s cubic-bezier(0.62, 0.58, 0.83, 1.43);
+  }
+
+  header .main-nav ul p {
+    font-size: 0.5rem;
+    color: $colorText;
+    font-family: emoji;
+    text-decoration: none;
+    padding: 10px;
+  }
+
+  header .main-nav ul li {
+    margin: 0 5px;
+    padding: 10px 0;
+    text-decoration: none;
+    list-style-type: none;
+  }
+
+  header .main-nav ul li a {
+    font-size: 2rem;
+    color: $colorText;
+    font-family: $fontFamily;
+    text-decoration: none;
+  }
+
+  header .main-nav ul li a:hover {
+    color: #f0f0f0;
+  }
+
+  header .main-nav ul .zoom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    font-family: $fontFamily;
+  }
+
+  header .main-nav ul .zoom button {
+    display: flex;
+    font-size: 1.5rem;
+    color: $colorText;
+    background-color: #1a1a1a;
+    border: 1px solid $colorText;
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 11px;
+  }
+
+  header .main-nav ul .zoom button:hover {
+    color: #f0f0f0;
+  }
+
+  main .name {
+    display: flex;
+    height: 150vh;
+    justify-content: center;
+    align-items: center;
+    text-align: end;
+    flex-direction: column;
+  }
+
+  main .name h1 {
+    font-size: 3.2rem;
+    text-align: end;
+    letter-spacing: 5px;
+    font-family: $fontFamily;
+  }
+
+  main .name p {
+    font-size: 0.7rem;
+    text-align: end;
+    font-family: $fontFamily;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    height: 200vh;
+  }
+
+  .content p {
+    font-size: 1rem;
+    text-align: center;
+    font-family: $fontFamily;
+  }
+
+  .content h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    letter-spacing: 5px;
+    font-family: $fontFamily;
+  }
+
+  .content h2::before {
+    content: "";
+    display: inline-block;
+    width: 50px;
+    height: 2px;
+    background-color: $colorText;
+    margin: 20px 5px;
+    vertical-align: middle;
+  }
+
+  .content h2::after {
+    content: "";
+    display: inline-block;
+    width: 50px;
+    height: 2px;
+    background-color: $colorText;
+    margin: 10px auto;
+    vertical-align: middle;
+  }
+
+  .content article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  .content article h3 {
+    font-size: 1.5rem;
+    text-align: left;
+    font-family: $fontFamily;
+  }
+
+  .content article h3::after {
+    content: "";
+    display: inline-block;
+    width: 50px;
+    height: 2px;
+    background-color: $colorText;
+    margin: 10px 5px;
+    vertical-align: middle;
+  }
+
+  .content article p {
+    font-size: 1rem;
+    text-align: center;
+    letter-spacing: 5px;
+    font-family: $fontFamily;
+  }
+
+  .expo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    height: 200vh;
+  }
+
+  main .contact {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+
+  main .contact h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    letter-spacing: 5px;
+    font-family: $fontFamily;
+  }
+
+  main .contact form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  main .contact input {
+    font-size: 1.5rem;
+    text-align: center;
+    letter-spacing: 5px;
+    font-family: $fontFamily;
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid $colorText;
+    background-color: #1a1a1a;
+    color: $colorText;
+  }
+
+  main .contact textarea {
+    font-size: 1.5rem;
+    text-align: center;
+    letter-spacing: 5px;
+    font-family: $fontFamily;
+    margin: 5px;
+    border: 1px solid $colorText;
+    border-radius: 10px;
+    background-color: #1a1a1a;
+    color: $colorText;
+  }
+
+  main .contact button {
+    font-size: 1rem;
+    text-align: center;
+    letter-spacing: 5px;
+    font-family: $fontFamily;
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid $colorText;
+    border-radius: 10px;
+    background-color: #1a1a1a;
+    color: $colorText;
+    cursor: pointer;
+  }
+
+  main .contact button:active {
+    color: #151515;
+    background-color: $colorText;
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    background-color: #1a1a1a;
+    color: $colorText;
+    font-family: $fontFamily;
+  }
+
+  footer .network {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  footer .network .network-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+  }
+
+  footer .network .network-icons ion-icon {
+    font-size: 1rem;
+    margin: 10px;
+  }
+
+  footer .Newsletter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+  }
+
+  footer .Newsletter form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  footer .Newsletter input {
+    font-size: 1rem;
+    text-align: center;
+    font-family: $fontFamily;
+    border: 1px solid $colorText;
+    background-color: #1a1a1a;
+    color: $colorText;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 5px;
+  }
+
+  footer .Newsletter button {
+    font-size: 1rem;
+    text-align: center;
+    font-family: $fontFamily;
+    border: 1px solid $colorText;
+    background-color: #1a1a1a;
+    color: $colorText;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  footer .map {
+    grid-row: 2/3;
+    grid-column: 1/3;
+  }
 }
 
-.container .main-nav ul li a {
-  color: $colorText;
-  text-decoration: none;
-}
-
-.container-img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 20vh;
-}
-
-.container-img .image {
-  width: 100%;
-  height: auto;
-}
-
-.container-img .image i {
-  width: 100%;
-  height: auto;
-}
-
-.container .main-nav ul li a:hover {
-  color: #f0f0f0;
-}
-
-.part{
+.part {
   height: 100vh;
 }
