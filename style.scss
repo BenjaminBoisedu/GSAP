@@ -397,13 +397,29 @@ body {
   .image img {
     width: 80%;
   }
+
+  .image1 {
+    position: relative;
+    left: -60%;
+  }
+  
+  .image2 {
+    position: relative;
+    left: 80%;
+  }
+  
+  .image3 {
+    position: relative;
+    left: -60%;
+  }
+  
+  .image4 {
+    position: relative;
+    left: 80%;
+  }
 }
 
 @media screen and (min-width: 436px) {
-  .image img {
-    width: 20%;
-  }
-
   .menu-btn {
     display: none;
   }
@@ -596,6 +612,31 @@ body {
     cursor: pointer;
     margin: 10px;
   }
+
+  .image img {
+    width: 40%;
+  }
+
+  .image1 {
+    position: relative;
+    left: -30%;
+  }
+  
+  .image2 {
+    position: relative;
+    left: 90%;
+  }
+  
+  .image3 {
+    position: relative;
+    left: -20%;
+  }
+  
+  .image4 {
+    position: relative;
+    left: 80%;
+  }
+  
 }
 
 .part {
@@ -607,24 +648,4 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-.image1 {
-  position: relative;
-  left: -60%;
-}
-
-.image2 {
-  position: relative;
-  left: 80%;
-}
-
-.image3 {
-  position: relative;
-  left: -60%;
-}
-
-.image4 {
-  position: relative;
-  left: 80%;
 }

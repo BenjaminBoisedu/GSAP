@@ -304,7 +304,7 @@ const image3 = document.querySelector(".image3");
 const image4 = document.querySelector(".image4");
 
 gsap.to(image1, {
-  xPercent: 90,
+  xPercent: 80,
   // duration : 2,
   scrollTrigger: {
     trigger: image1,
@@ -312,14 +312,14 @@ gsap.to(image1, {
     toggleActions: "reverse none none none",
     start: "top 60%",
     end: "80% 70%",
-    // markers : true,
+    // markers : true, 
     scrub: 1,
     // pin : true,
   },
 });
 
 gsap.to(image2, {
-  xPercent: -80,
+  xPercent: -60,
   // duration : 2,
   scrollTrigger: {
     trigger: image2,
@@ -334,7 +334,7 @@ gsap.to(image2, {
 });
 
 gsap.to(image3, {
-  xPercent: 75,
+  xPercent: 65,
   // duration : 2,
   scrollTrigger: {
     trigger: image3,
@@ -349,7 +349,7 @@ gsap.to(image3, {
 });
 
 gsap.to(image4, {
-  xPercent: -85,
+  xPercent: -70,
   // duration : 2,
   scrollTrigger: {
     trigger: image4,
