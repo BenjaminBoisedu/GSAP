@@ -291,7 +291,7 @@ gsap.to(image1, {
       toggleActions : "reverse none none none",
       start : "top 50%",
       end : "bottom 60%",
-      markers : true,
+      // markers : true,
       scrub : 1,
       // pin : true,
   }
@@ -306,7 +306,7 @@ gsap.to(image2, {
     toggleActions : "reverse none none none",
     start : "top 50%",
     end : "bottom 60%",
-    markers : true,
+    // markers : true,
     scrub : 1,
     // pin : true,
 }
@@ -321,7 +321,7 @@ gsap.to(image3, {
     toggleActions : "reverse none none none",
     start : "top 50%",
     end : "bottom 60%",
-    markers : true,
+    // markers : true,
     scrub : 1,
     // pin : true,
 }
@@ -336,7 +336,7 @@ gsap.to(image4, {
     toggleActions : "reverse none none none",
     start : "top 50%",
     end : "bottom 60%",
-    markers : true,
+    // markers : true,
     scrub : 1,
     // pin : true,
 }
