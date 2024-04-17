@@ -389,30 +389,31 @@ body {
 
 .container-img{
   overflow: hidden;
-  // display: flex;
-  // flex-direction: row;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .image img{
-  width: 100%;
+  width: 80%;
 }
 
 .image1{
   position: relative;
-  left: -100%;
+  left: -80%;
 }
 
 .image2{
   position: relative;
-  left: 100%;
+  left: 80%;
 }
 
 .image3{
   position: relative;
-  left: -100%;
+  left: -80%;
 }
 
 .image4{
   position: relative;
-  left: 100%;
+  left: 80%;
 }
