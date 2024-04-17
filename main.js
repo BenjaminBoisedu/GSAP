@@ -273,71 +273,71 @@ gsap.fromTo(
   }
 );
 
-gsap.registerPlugin(ScrollTrigger)
+gsap.registerPlugin(ScrollTrigger);
 
-const containerImg = document.querySelector('.container-img');
-const expo = document.querySelector('.expo');
-const image1 = document.querySelector('.image1');
-const image2 = document.querySelector('.image2');
-const image3 = document.querySelector('.image3');
-const image4 = document.querySelector('.image4');
+const containerImg = document.querySelector(".container-img");
+const expo = document.querySelector(".expo");
+const image1 = document.querySelector(".image1");
+const image2 = document.querySelector(".image2");
+const image3 = document.querySelector(".image3");
+const image4 = document.querySelector(".image4");
 
 gsap.to(image1, {
-  xPercent : 70,
+  xPercent: 90,
   // duration : 2,
-  scrollTrigger : {
-      trigger : image1, 
-      // toggleActions : "restart reverse play reverse",
-      toggleActions : "reverse none none none",
-      start : "top 60%",
-      end : "80% 70%",
-      // markers : true,
-      scrub : 1,
-      // pin : true,
-  }
-})
+  scrollTrigger: {
+    trigger: image1,
+    // toggleActions : "restart reverse play reverse",
+    toggleActions: "reverse none none none",
+    start: "top 60%",
+    end: "80% 70%",
+    // markers : true,
+    scrub: 1,
+    // pin : true,
+  },
+});
 
 gsap.to(image2, {
-  xPercent : -70,
+  xPercent: -80,
   // duration : 2,
-  scrollTrigger : {
-    trigger : image2, 
+  scrollTrigger: {
+    trigger: image2,
     // toggleActions : "restart reverse play reverse",
-    toggleActions : "reverse none none none",
-    start : "top 60%",
-    end : "90% 70%",
+    toggleActions: "reverse none none none",
+    start: "top 60%",
+    end: "90% 70%",
     // markers : true,
-    scrub : 1,
+    scrub: 1,
     // pin : true,
-}
-})
+  },
+});
 
 gsap.to(image3, {
-  xPercent : 70,
+  xPercent: 75,
   // duration : 2,
-  scrollTrigger : {
-    trigger : image3, 
+  scrollTrigger: {
+    trigger: image3,
     // toggleActions : "restart reverse play reverse",
-    toggleActions : "reverse none none none",
-    start : "top 60%",
-    end : "bottom 70%",
+    toggleActions: "reverse none none none",
+    start: "top 60%",
+    end: "bottom 70%",
     // markers : true,
-    scrub : 1,
+    scrub: 1,
     // pin : true,
-}
-})
+  },
+});
 
 gsap.to(image4, {
-  xPercent : -70,
+  xPercent: -85,
   // duration : 2,
-  scrollTrigger : {
-    trigger : image4, 
+  scrollTrigger: {
+    trigger: image4,
     // toggleActions : "restart reverse play reverse",
-    toggleActions : "reverse none none none",
-    start : "top 60%",
-    end : "70% 70%",
+    toggleActions: "reverse none none none",
+    start: "top 60%",
+    end: "65% 65%",
     // markers : true,
-    scrub : 1,
+    scrub: 1,
     // pin : true,
-}
-})
+  },
+});
