@@ -71,6 +71,10 @@ const camPath = new THREE.CatmullRomCurve3([
   new THREE.Vector3(-5, 1, 0),
   new THREE.Vector3(-3, 1, 2),
   new THREE.Vector3(0, 1, 4),
+  new THREE.Vector3(3, 1, 2),
+  new THREE.Vector3(5, 1, 0),
+  new THREE.Vector3(3, 1, -2),
+  new THREE.Vector3(0, 1, -4),
 ]);
 
 const camPoints = camPath.getPoints(50);
@@ -134,7 +138,7 @@ scene.add(stars);
 function UpdateCam() {
   window.addEventListener("scroll", () => {
     const scroll = { y: window.scrollY };
-    const t = Math.min(Math.max(scroll.y / 3500, 0), 1);
+    const t = Math.min(Math.max(scroll.y / 4000, 0), 1);
     const pos = camPath.getPointAt(t);
     camera.position.copy(pos);
     camera.lookAt(0, 1, 1.5);
