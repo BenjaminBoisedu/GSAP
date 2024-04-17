@@ -410,13 +410,27 @@ body {
 
   .main-nav-ul {
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
     list-style-type: none;
   }
 
   .main-nav-ul li {
     margin: 0 5px;
+    padding: 10px 0;
+    text-decoration: none;
+    list-style-type: none;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+
+  .main-nav-ul li:nth-child(1) {
+    margin-left: 10px;
+  }
+
+  .main-nav-ul li:hover {
+    color: #f0f0f0;
+    transform: perspective(1px) scale(1.1);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
   }
 
   .main-nav-ul li a {
@@ -441,6 +455,7 @@ body {
   .name,
   .about {
     height: 100vh;
+    font-family: $fontFamily;
   }
 
   .name {
@@ -471,6 +486,31 @@ body {
     position: relative;
     top: 26%;
   }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    height: 100vh;
+  }
+
+  .content p.content-text {
+    font-size: 1rem;
+    text-align: right;
+    font-family: $fontFamily;
+    width: 50%;
+    position: relative;
+  }
+
+  .content h2 {
+    font-size: 2rem;
+    text-align: center;
+    letter-spacing: 5px;
+    font-family: $fontFamily;
+  }
+
   .container .anchor-link {
     color: $colorText;
     font-size: 1.5rem;
