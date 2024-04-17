@@ -283,12 +283,12 @@ const image3 = document.querySelector(".image3");
 const image4 = document.querySelector(".image4");
 
 gsap.to(image1, {
-  xPercent: 90,
+  xPercent: 73,
   // duration : 2,
   scrollTrigger: {
     trigger: image1,
-    // toggleActions : "restart reverse play reverse",
-    toggleActions: "reverse none none none",
+    toggleActions : "restart reverse play reverse",
+    // toggleActions: "reverse none none none",
     start: "top 60%",
     end: "80% 70%",
     // markers : true,
@@ -302,8 +302,8 @@ gsap.to(image2, {
   // duration : 2,
   scrollTrigger: {
     trigger: image2,
-    // toggleActions : "restart reverse play reverse",
-    toggleActions: "reverse none none none",
+    toggleActions : "restart reverse play reverse",
+    // toggleActions: "reverse none none none",
     start: "top 60%",
     end: "90% 70%",
     // markers : true,
@@ -317,8 +317,8 @@ gsap.to(image3, {
   // duration : 2,
   scrollTrigger: {
     trigger: image3,
-    // toggleActions : "restart reverse play reverse",
-    toggleActions: "reverse none none none",
+    toggleActions : "restart reverse play reverse",
+    // toggleActions: "reverse none none none",
     start: "top 60%",
     end: "bottom 70%",
     // markers : true,
@@ -328,12 +328,12 @@ gsap.to(image3, {
 });
 
 gsap.to(image4, {
-  xPercent: -85,
+  xPercent: -80,
   // duration : 2,
   scrollTrigger: {
     trigger: image4,
-    // toggleActions : "restart reverse play reverse",
-    toggleActions: "reverse none none none",
+    toggleActions : "restart reverse play reverse",
+    // toggleActions: "reverse none none none",
     start: "top 60%",
     end: "65% 65%",
     // markers : true,
