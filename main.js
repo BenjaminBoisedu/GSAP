@@ -272,3 +272,23 @@ gsap.fromTo(
     ease: "power1.inOut",
   }
 );
+
+gsap.registerPlugin(ScrollTrigger)
+
+const containerImg = document.querySelector('.container-img');
+const expo = document.querySelector('.expo');
+const image1 = document.querySelector('.image1');
+
+gsap.to(image1, {
+  xPercent : 500,
+  // duration : 2,
+  scrollTrigger : {
+      trigger : expo, 
+      toggleActions : "restart reverse play reverse",
+      start : "top 40%",
+      end : "bottom 30%",
+      markers : true,
+      scrub : 1,
+      // pin : true,
+  }
+})
