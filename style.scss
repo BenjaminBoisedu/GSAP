@@ -402,17 +402,17 @@ body {
     position: relative;
     left: -60%;
   }
-  
+
   .image2 {
     position: relative;
     left: 80%;
   }
-  
+
   .image3 {
     position: relative;
     left: -60%;
   }
-  
+
   .image4 {
     position: relative;
     left: 80%;
@@ -518,6 +518,7 @@ body {
     font-family: $fontFamily;
     width: 50%;
     position: relative;
+    transform: translate3d(13rem, -4rem, 10px);
   }
 
   .content h2 {
@@ -525,6 +526,33 @@ body {
     text-align: center;
     letter-spacing: 5px;
     font-family: $fontFamily;
+  }
+
+  .content h2::before {
+    content: "";
+    display: inline-block;
+    width: 50px;
+    height: 2px;
+    background-color: $colorText;
+    margin: 20px 5px;
+    vertical-align: middle;
+  }
+
+  .content h2::after {
+    content: "";
+    display: inline-block;
+    width: 50px;
+    height: 2px;
+    background-color: $colorText;
+    margin: 10px auto;
+    vertical-align: middle;
+  }
+
+  .content article {
+    position: relative;
+    left: -22%;
+    width: 50%;
+    bottom: 11%;
   }
 
   .container .anchor-link {
@@ -615,28 +643,28 @@ body {
 
   .image img {
     width: 40%;
+    border: 1px solid $colorText;
   }
 
   .image1 {
     position: relative;
     left: -30%;
   }
-  
+
   .image2 {
     position: relative;
     left: 90%;
   }
-  
+
   .image3 {
     position: relative;
     left: -20%;
   }
-  
+
   .image4 {
     position: relative;
     left: 80%;
   }
-  
 }
 
 .part {
