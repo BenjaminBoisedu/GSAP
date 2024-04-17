@@ -196,6 +196,7 @@ const contentText = document.querySelector(".content-text");
 
 zoomIncrease.addEventListener("click", () => {
   contentText.style.fontSize = "1.5rem";
+  console.log(contentText.style.fontSize);
 });
 
 zoomDecrease.addEventListener("click", () => {
