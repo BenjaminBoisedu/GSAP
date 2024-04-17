@@ -429,6 +429,8 @@ body {
     justify-content: end;
     align-items: center;
     list-style-type: none;
+    padding: 0;
+    margin: 10px;
   }
 
   .main-nav-ul li {
@@ -565,6 +567,70 @@ body {
     bottom: 5px;
     right: 5px;
     z-index: 2;
+  }
+
+  main .contact {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+
+  main .contact h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    letter-spacing: 5px;
+    font-family: $fontFamily;
+  }
+
+  main .contact form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  main .contact input {
+    font-size: 1.5rem;
+    text-align: center;
+    letter-spacing: 5px;
+    font-family: $fontFamily;
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid $colorText;
+    background-color: #1a1a1a;
+    color: $colorText;
+  }
+
+  main .contact textarea {
+    font-size: 1.5rem;
+    text-align: center;
+    letter-spacing: 5px;
+    font-family: $fontFamily;
+    margin: 5px;
+    border: 1px solid $colorText;
+    border-radius: 10px;
+    background-color: #1a1a1a;
+    color: $colorText;
+  }
+
+  main .contact button {
+    font-size: 1rem;
+    text-align: center;
+    letter-spacing: 5px;
+    font-family: $fontFamily;
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid $colorText;
+    border-radius: 10px;
+    background-color: #1a1a1a;
+    color: $colorText;
+    cursor: pointer;
+  }
+
+  main .contact button:active {
+    color: #151515;
+    background-color: $colorText;
   }
 
   footer {
