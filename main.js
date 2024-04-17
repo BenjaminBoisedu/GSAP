@@ -283,7 +283,7 @@ const image3 = document.querySelector('.image3');
 const image4 = document.querySelector('.image4');
 
 gsap.to(image1, {
-  xPercent : 90,
+  xPercent : 70,
   // duration : 2,
   scrollTrigger : {
       trigger : image1, 
@@ -313,7 +313,7 @@ gsap.to(image2, {
 })
 
 gsap.to(image3, {
-  xPercent : 90,
+  xPercent : 70,
   // duration : 2,
   scrollTrigger : {
     trigger : image3, 
