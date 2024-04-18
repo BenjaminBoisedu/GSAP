@@ -119,9 +119,6 @@ loader.load("scene.gltf", function (gltf) {
   gltf.scene.position.z = 0;
   animate();
 });
-
-console.log(loader);
-
 // Stars
 
 const starsGeometry = new THREE.BufferGeometry();
@@ -254,27 +251,6 @@ gsap.fromTo(
 
 const credits = document.querySelector(".credits");
 
-// gsap.fromTo(
-//   credits,
-//   {
-//     y: 0,
-//     x: 0,
-//     opacity: 1,
-//     ease: "power1.inOut",
-//     delay: 2,
-//     duration: 1.5,
-//     direction: "alternate",
-//   },
-//   {
-//     y: 0,
-//     x: -100,
-//     opacity: 0,
-//     duration: 1.5,
-//     delay: 2,
-//     ease: "power1.inOut",
-//   }
-// );
-
 const contentTitle = document.querySelector(".content-title");
 
 gsap.fromTo(
@@ -366,20 +342,6 @@ gsap.to(image4, {
     // pin : true,
   },
 });
-
-// const darkmode = document.querySelector(".darkmode-on");
-
-// const lightmode = document.querySelector(".darkmode-off");
-
-// darkmode.addEventListener("click", () => {
-//   scene.background = new THREE.Color(0x000000);
-//   pointLight.color = new THREE.Color(0xffffff);
-// });
-
-// lightmode.addEventListener("click", () => {
-//   scene.background = new THREE.Color(0xffffff);
-//   pointLight.color = new THREE.Color(0x000000);
-// });
 
 const inauguration = document.querySelector(".inauguration");
 

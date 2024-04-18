@@ -20,10 +20,10 @@
   <div class="container">
     <header class="nav">
       <div class="menu-btn" aria-label="Bouton proposant un Menu">
-        <ion-icon name="menu-outline" class="menu-outline" tabindex="0"></ion-icon>
+        <ion-icon name="menu-outline" class="menu-outline"></ion-icon>
       </div>
       <nav class="main-nav">
-        <ul class="main-nav-ul" tabindex="1">
+        <ul class="main-nav-ul">
           <li><a href="#expo" aria-label="Boutons affichant les expositions du musée">Expositions</a></li>
           <li><a href="#about" aria-label="Boutons affichant l'histoire du musée">Histoire</a></li>
           <li><a href="#contact" aria-label="Boutons affichant le formulaire de contact">Contact</a></li>
@@ -47,7 +47,7 @@
     </header>
     <main>
       <section class="name" id="home">
-        <h1 class="h1-name" tabindex="3" aria-label="Nom du musée">
+        <h1 class="h1-name" aria-label="Nom du musée">
           National Museum of Photography
         </h1>
         <p class="credits" aria-label="Crédits du musée">
@@ -59,7 +59,7 @@
       </section>
       <section id="about" class="about">
         <div class="content">
-          <h2 class="content-title" tabindex="4" aria-label="Titre rubrique Histoire du Musée">Museum Story</h2>
+          <h2 class="content-title" aria-label="Titre rubrique Histoire du Musée">Museum Story</h2>
           <p color="white" class="content-text" aria-label="Description du musée">
             The Museum of Modern Art (MoMA) is an art museum located in Midtown Manhattan, New York City, on 53rd Street
             between Fifth and Sixth Avenues.
@@ -86,16 +86,20 @@
       <section class="expo" id="expo" aria-label="Rubrique expositions">
         <div class="container-img">
           <div class="image image1">
-            <img src="media/image1.jpeg" alt="Première image exposée qui représente les étoiles dans une chaine de montagne d'Island photographié par Annie Leibovitz en janvier" />
+            <img src="media/image1.jpeg"
+              alt="Première image exposée qui représente les étoiles dans une chaine de montagne d'Island photographié par Annie Leibovitz en janvier" />
           </div>
           <div class="image image2">
-            <img src="media/image2.jpeg" alt="Deuxième image exposée qui représente de la végétation dans le désert du sahara photographié par Steve McCurry au mois de mai" />
+            <img src="media/image2.jpeg"
+              alt="Deuxième image exposée qui représente de la végétation dans le désert du sahara photographié par Steve McCurry au mois de mai" />
           </div>
           <div class="image image3">
-            <img src="media/image3.jpeg" alt="Troisième image exposée qui représente des camps de scientifique en pleine norvège photographié par David LaChapelle au mois de novembre" />
+            <img src="media/image3.jpeg"
+              alt="Troisième image exposée qui représente des camps de scientifique en pleine norvège photographié par David LaChapelle au mois de novembre" />
           </div>
           <div class="image image4">
-            <img src="media/image4.jpeg" alt="Quatrième image exposée qui représente une vision aérienne des baies coloré en rose en Australie photographié par David Bailey" />
+            <img src="media/image4.jpeg"
+              alt="Quatrième image exposée qui représente une vision aérienne des baies coloré en rose en Australie photographié par David Bailey" />
           </div>
         </div>
       </section>
@@ -104,21 +108,23 @@
           <h2>Contact</h2>
           <form action="index.html" method="post">
             <div class="nameField">
-              <input type="text" name="name" id="name" required placeholder="Nom" autocomplete="name" aria-label="Champ Nom"/>
+              <input type="text" name="name" id="name" title="Name" required placeholder="Nom" autocomplete="name"
+                aria-label="Champ Nom" aria-required="true" />
             </div>
             <div class="mailField">
-              <input type="email" name="email" id="email" required placeholder="Email" autocomplete="email"  aria-label="Champ Email"/>
+              <input type="email" name="email" id="email" title="Email" required placeholder="Email"
+                autocomplete="email" aria-label="Champ Email" aria-required="true" />
             </div>
             <div class="message">
-              <textarea name="message" id="message" cols="25" rows="8" required
-                placeholder="Send us your message "  aria-label="Champ Message écrit personnalisé"></textarea>
+              <textarea name="message" id="message" cols="25" rows="8" required placeholder="Send us your message "
+                aria-label="Champ Message écrit personnalisé"></textarea>
             </div>
-            <button type="submit"  aria-label="Bouton de validation Contact">Send</button>
+            <button type="submit" aria-label="Bouton de validation Contact">Send</button>
           </form>
       </section>
     </main>
     <div class="anchor">
-      <a href="#home" class="anchor-link" tabindex="5" aria-label="Bouton retour en haut de la page">
+      <a href="#home" class="anchor-link" aria-label="Bouton retour en haut de la page">
         <ion-icon name="chevron-up-outline"></ion-icon>
       </a>
     </div>
@@ -136,7 +142,8 @@
     <section class="Newsletter" aria-label="Rubrique Newsletter">
       <h3>Newsletter</h3>
       <form action="index.html" method="post">
-        <input type="email" name="email" id="email" required placeholder="Email" autocomplete="email" aria-label="Champ Email"/>
+        <input type="email" name="email" id="email" required placeholder="Email" autocomplete="email"
+          aria-label="Champ Email" aria-required="true" />
         <button type="submit" aria-label="Bouton de validation Newsletter">Subscribe</button>
       </form>
     </section>
@@ -144,9 +151,7 @@
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.0730000000003!2d2.352221315674781!3d48.85661407928756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2sMus%C3%A9e%20du%20Louvre!5e0!3m2!1sfr!2sfr!4v1633943660004!5m2!1sfr!2sfr"
         width="100%" height="300" style="border: 2px;color: #949494;border-style: solid;" allowfullscreen=""
-        loading="lazy" accesskey="
-      " tabindex="6
-        "></iframe>
+        loading="lazy" aria-label="Map emplacement du Musée"></iframe>
 
     </section>
   </footer>
